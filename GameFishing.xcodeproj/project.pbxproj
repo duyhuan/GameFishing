@@ -12,6 +12,12 @@
 		E2F93CC71E261D9E000ABD50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F93CC51E261D9E000ABD50 /* Main.storyboard */; };
 		E2F93CC91E261D9E000ABD50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F93CC81E261D9E000ABD50 /* Assets.xcassets */; };
 		E2F93CCC1E261D9E000ABD50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F93CCA1E261D9E000ABD50 /* LaunchScreen.storyboard */; };
+		E2F93CD41E261DC1000ABD50 /* FishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F93CD31E261DC1000ABD50 /* FishView.swift */; };
+		E2F93CD81E261DEC000ABD50 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F93CD71E261DEC000ABD50 /* GameManager.swift */; };
+		E2F93CDD1E262255000ABD50 /* ocean.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F93CDA1E262255000ABD50 /* ocean.png */; };
+		E2F93CDE1E262255000ABD50 /* hook.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F93CDB1E262255000ABD50 /* hook.png */; };
+		E2F93CDF1E262255000ABD50 /* fish1.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F93CDC1E262255000ABD50 /* fish1.png */; };
+		E2F93CE11E263548000ABD50 /* HookerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F93CE01E263548000ABD50 /* HookerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		E2F93CC81E261D9E000ABD50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2F93CCB1E261D9E000ABD50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2F93CCD1E261D9E000ABD50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F93CD31E261DC1000ABD50 /* FishView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishView.swift; sourceTree = "<group>"; };
+		E2F93CD71E261DEC000ABD50 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		E2F93CDA1E262255000ABD50 /* ocean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ocean.png; sourceTree = "<group>"; };
+		E2F93CDB1E262255000ABD50 /* hook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hook.png; sourceTree = "<group>"; };
+		E2F93CDC1E262255000ABD50 /* fish1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish1.png; sourceTree = "<group>"; };
+		E2F93CE01E263548000ABD50 /* HookerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HookerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +72,22 @@
 				E2F93CC81E261D9E000ABD50 /* Assets.xcassets */,
 				E2F93CCA1E261D9E000ABD50 /* LaunchScreen.storyboard */,
 				E2F93CCD1E261D9E000ABD50 /* Info.plist */,
+				E2F93CD31E261DC1000ABD50 /* FishView.swift */,
+				E2F93CE01E263548000ABD50 /* HookerView.swift */,
+				E2F93CD71E261DEC000ABD50 /* GameManager.swift */,
+				E2F93CD91E262232000ABD50 /* Suppoting File */,
 			);
 			path = GameFishing;
+			sourceTree = "<group>";
+		};
+		E2F93CD91E262232000ABD50 /* Suppoting File */ = {
+			isa = PBXGroup;
+			children = (
+				E2F93CDA1E262255000ABD50 /* ocean.png */,
+				E2F93CDB1E262255000ABD50 /* hook.png */,
+				E2F93CDC1E262255000ABD50 /* fish1.png */,
+			);
+			name = "Suppoting File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F93CCC1E261D9E000ABD50 /* LaunchScreen.storyboard in Resources */,
+				E2F93CDE1E262255000ABD50 /* hook.png in Resources */,
 				E2F93CC91E261D9E000ABD50 /* Assets.xcassets in Resources */,
+				E2F93CDF1E262255000ABD50 /* fish1.png in Resources */,
+				E2F93CDD1E262255000ABD50 /* ocean.png in Resources */,
 				E2F93CC71E261D9E000ABD50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +167,9 @@
 			files = (
 				E2F93CC41E261D9E000ABD50 /* ViewController.swift in Sources */,
 				E2F93CC21E261D9E000ABD50 /* AppDelegate.swift in Sources */,
+				E2F93CE11E263548000ABD50 /* HookerView.swift in Sources */,
+				E2F93CD41E261DC1000ABD50 /* FishView.swift in Sources */,
+				E2F93CD81E261DEC000ABD50 /* GameManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

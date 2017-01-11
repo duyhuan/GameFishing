@@ -12,14 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let fishView = FishView(frame: CGRect(x: 0, y: 0, width: 40, height: 30))
+        fishView.generateFish(width: Int(self.view.bounds.width))
+        self.view.addSubview(fishView)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
